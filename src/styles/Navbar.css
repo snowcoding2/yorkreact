@@ -1,0 +1,11 @@
+.Navbar-Container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.Navbar-Search {
+    margin-top: 25px;
+    height: 20px;
+}
