@@ -1,16 +1,16 @@
-import React from "react"
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Alumni from './pages/Alumni'
 
 export default function App () {
     return (
-        <div>
-            <Header />
-            <Navbar />
-            <Main />
-            <Footer />
-        </div>
+        <BrowserRouter>
+            <main>
+                <Routes >
+                    <Route path="/" element={<Home />}/>
+                    <Route path="alumni" element={<Alumni />} />
+                </Routes>
+            </main>
+        </BrowserRouter>
     )
 }
